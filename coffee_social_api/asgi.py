@@ -1,5 +1,5 @@
 """
-ASGI config for COFFEE_SOCIAL_API project.
+ASGI config for coffee_social_api project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'COFFEE_SOCIAL_API.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'coffee_social_api.settings')
 
 application = get_asgi_application()
