@@ -1,6 +1,5 @@
 from coffee_social_api.permissions import IsOwnerOrReadOnly
 from rest_framework import generics
-from drf_api.permissions import IsOwnerOrReadOnly
 from .models import Profile
 from .serializers import ProfileSerializer
 
