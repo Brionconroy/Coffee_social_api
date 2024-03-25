@@ -9,7 +9,7 @@ class BaristaSerializer(serializers.ModelSerializer):
     and fields to hold the number of reviews related to that
     User and calculation of average star-rating.
     """
-    
+
     owner = serializers.ReadOnlyField(source='owner.username')
     is_owner = serializers.SerializerMethodField()
     profile_id = serializers.ReadOnlyField(source='owner.profile.id')
@@ -37,7 +37,7 @@ class BaristaSerializer(serializers.ModelSerializer):
         model = Barista
         fields = [
             'id', 'owner', 'is_owner', 'profile_id', 'profile_image',
-            'location', 'speciality_types', 'rates_per_hour', 
+            'location', 'speciality_types', 'rates_per_hour',
             'email', 'created_at', 'updated_at',
             'review_count', 'star_rating',
         ]

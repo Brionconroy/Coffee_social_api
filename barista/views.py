@@ -16,7 +16,7 @@ class BaristaList(generics.ListCreateAPIView):
 
     # Calculate the total number of reviews and an average star-rating
     # related to each Barista.
-    
+
     queryset = Barista.objects.annotate(
         reviews_count=Count('reviews', distinct=True),
         average_rating=Avg('reviews__rating')
@@ -45,6 +45,6 @@ class BaristaDetail(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [IsOwnerOrReadOnly]
     serializer_class = BaristaSerializer
     queryset = Barista.objects.annotate(
-        reviews_count = Count('reviews', distinct=True),
-        average_rating = Avg('reviews__rating')
+        reviews_count=Count('reviews', distinct=True),
+        average_rating=Avg('reviews__rating')
     ).order_by('-created_at')

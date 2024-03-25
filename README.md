@@ -267,309 +267,155 @@ As a new visitor to the site, I would like to be able to make a booking and edit
 
 # Testing 
 
- 
- 
+## Validation testing
 
-### Bugs 
-
- 
-
-### Manual Testing
-
-
-
-### Features Testing
-
-
-
-**Navbar**
-
-
-
-|Test  | Expected Outcome  | Pass or Fail |
-|--|--|--|
-| The Corner Bistro Logo present | Yes  | Pass |
-| Click Logo in navbar | Home page Redirect | Pass |
-| Click Home in navbar | Home page Redirect | Pass |
-| Click Menu in navbar| Bring user to menu page | Pass |
-| Click Log-in | Redirect to Log-in page | Pass |
-| Click Log-out | Redirect to Log-out page | Pass |
-| Click Sign-up | Redirect to Sign-up page | Pass |
-| If user Logged in booking appears in navbar | log-in disappears and booking appears | Pass |
-| Click Booking in navbar | Redirect to Booking page | Pass |
-
-
-
-**Booking Form**
-
-
-
-|Test  | Expected Outcome  | Pass or Fail |
-|--|--|--|
-| Booking form only appear in navbar if logged in | Yes  | Pass |
-| First name must be entered for the form to be submitted | Yes  | Pass |
-| Last name must be entered for the form to be submitted | Yes | Pass |
-| Email must be entered for the form to be submitted | Yes | Pass |
-| Time field appear with start time of 12:00 | Yes | Pass |
-| Date field appear with today’s date | Yes | Pass |
-| Number of guest field only excepts number | Yes | Pass |
-| Special Request/Requirements field must take information | Yes | Pass |
-| Clicking Reserve button send booking to the database | Yes | Pass |
-
-
-
-**Booking Details**
-
-
-
-|Test  | Expected Outcome  | Pass or Fail |
-|--|--|--|
-| Booking details page will only appear after you've made a booking | Yes  | Pass |
-| Booking details page will only show your booking | It shows you all the booking on the database  | Fail |
-| Clicking Cancel will return you to the home page | Yes | Pass |
-| Clicking Cancel will give you confirmation of your cancelation | No  | Fail |
-| Clicking Update Booking will update booking | No | Fail |
-| Clicking Update Booking will also return you to the home page | No | Fail |
-| Clicking Update Booking will give you confirmation of updated booking | No | Fail |
-
-
-
-**Sign-up**
-
-
-
-|Test  | Expected Outcome  | Pass or Fail |
-|--|--|--|
-| Sign-up form creates an account on the database | Yes  | Pass |
-| Form must have a username to create an account | Yes  | Pass |
-| Form must have a password to create an account | Yes  | Pass |
-| Account will only be created if password is entered twice correctly | Yes  | Pass |
-| Form doesn’t have to have email but will except it if user wants | Yes  | Pass |
-| The sign up button will redirect you to home page | Yes  | Pass |
-| The sign up button will log you in | Yes  | Pass |
-
-
-
-**Sign-in**
-
-
-
-|Test  | Expected Outcome  | Pass or Fail |
-|--|--|--|
-| Sign-in form signs in a user if information is correct  | Yes  | Pass |
-| Sign-in form dose not signs in a user if information is incorrect  | Yes  | Pass |
-| Sign-in form will throw a (The username and/or password you specified are not correct.) if password is incorrect| Yes  | Pass |
-| Sign-in form will throw a (The username and/or password you specified are not correct.) if username is incorrect| Yes  | Pass |
-| The Remember Me if toggled remembers users information | Yes  | Pass |
-| Clicking sign-in button will sign you in | Yes  | Pass |
-| Clicking sign-in button will also return you to the home page if clicked | Yes  | Pass |
-| Clicking Forgot Password will send you reset password email | it return a error 500 | Fail |
-
-
-
-**Sign-out**
-
-
-
-|Test  | Expected Outcome  | Pass or Fail |
-|--|--|--|
-| Sign-out will only appear in navbar if signed in | Yes  | Pass |
-| Sign-out message appear on page asking you are you sure you want to sign out | Yes  | Pass |
-| clicking Sign-out will redirect user to home page | Yes  | Pass |
-
-**Footer**
-
-
-
-|Test  | Expected Outcome  | Pass or Fail |
-|--|--|--|
-| Footers links all work | Yes  | Pass |
-| Links bring you to each site in a diffent tab | Yes  | Pass |
-
-
-
-### Code Validation 
-
- 
-
-### Python 
-
- 
- 
-
-+ Before I deployed my App for the final time. I ran the code throught the PEP8 validator and it pass. 
-
- 
- 
+All code was passed throught the pep8 validater and was cleaned up. The only code that was not tampered with was the django generated code. the lines where too long as showen.
 
 <details> 
 
  
  
 
-<summary>view.py</summary> 
+<summary>barista initial file</summary>  
 
  
  
 
-![view.py](booking_service/static/images/readme/validation_testing/view.py_validation.png) 
+![barista initial file](readme/barista-0001_initial.py.png) 
 
  
  
 
 </details> 
-
- 
- 
 
 <details> 
 
  
  
 
-<summary>setting.py</summary> 
+<summary>comment initial file</summary>  
 
  
  
 
-![setting.py](booking_service/static/images/readme/validation_testing/setting.py_validator.png) 
+![comment initial file](readme/comments-initial.png) 
 
  
  
 
-</details> 
-
- 
- 
+</details>
 
 <details> 
 
  
  
 
-<summary>models.py</summary> 
+<summary>contact-admin initial file</summary>  
 
  
  
 
-![models.py](booking_service/static/images/readme/validation_testing/models.py_validation.png) 
+![contact-admin initial file](readme/contact-admin-initial.png) 
 
  
  
 
 </details> 
-
- 
- 
 
 <details> 
 
  
  
 
-<summary>form.py</summary> 
+<summary>followers initial file</summary>  
 
  
  
 
-![form.py](booking_service/static/images/readme/validation_testing/form.py-validation.png) 
+![followers initial file](readme/followers-initial.png) 
 
  
  
 
 </details> 
-
- 
- 
 
 <details> 
 
- 
- 
-
-<summary>corner bistro url.py</summary> 
+<summary>likes initial file</summary>  
 
  
  
 
-![corner_bistro_url.py](booking_service/static/images/readme/validation_testing/corner_bistro_url.py_validation.png) 
+![likes initial file](readme/followers-initial.png) 
 
  
  
 
 </details> 
-
- 
- 
 
 <details> 
 
- 
- 
-
-<summary>booking service url.py</summary> 
+<summary>posts initial file</summary>  
 
  
  
 
-![booking_service_url.py](booking_service/static/images/readme/validation_testing/booking_service_url.py_validator.png) 
+![posts initial file](readme/posts-initial.png) 
 
  
  
 
 </details> 
-
- 
- 
 
 <details> 
 
- 
- 
-
-<summary>app.py</summary> 
+<summary>profiles initial file</summary>  
 
  
  
 
-![app.py](booking_service/static/images/readme/validation_testing/app.py_validation.png) 
+![profiles initial file](readme/profile-initial.png) 
 
  
  
 
-</details> 
-
- 
- 
+</details>
 
 <details> 
 
- 
- 
-
-<summary>admin.py</summary> 
+<summary>reviews initial file</summary>  
 
  
  
 
-![admin.py](booking_service/static/images/readme/validation_testing/admin.py_valation.png) 
+![reviews initial file](readme/reviews-initial.png) 
 
  
  
 
 </details> 
 
- 
- 
+<details> 
 
-
- 
- 
-
-## Deployment 
+<summary>settings.py</summary>  
 
  
  
+
+![settings.py](readme/settings.py.png) 
+
+ 
+ 
+
+</details>
+
+
+
+### Bugs
+
++ There was a bug that was addressed on user logout as they are not doing anymore updates of that old version if django i found a work around online.
+
+## Deployment
 
 The first thing you should do when creating a new project is to deploy it as quick as you can to prevent any nasty errors that might be a pain to fix when your project is complete. For this project I used Heroku to deploy too. The framework I used in this project was Django, so the first thing you need to do is to create a Django project in you work space and install all the supporting libraries. Once evrthing is installed you should you should make a migration to the database with a small model to make sure everything works. 
 

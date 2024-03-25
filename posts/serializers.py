@@ -13,7 +13,7 @@ class PostSerializer(serializers.ModelSerializer):
     comments_count = serializers.ReadOnlyField()
 
     def validate_image(self, value):
-        if value.size > 1024 *1024 * 2:
+        if value.size > 1024 * 1024 * 2:
             raise serializers.ValidationError(
                 'Image size Larger than 2MB!'
             )
