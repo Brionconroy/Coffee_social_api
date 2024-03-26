@@ -2,13 +2,13 @@
 
 ## Introduction 
 
-The Corner Bistro is full stack website developed to allow the owner/admin of the site to recieve, view, edit and delete restraunt bookings. 
+The Coffee Social API is Back-end database that caters for my front-end React project, the Coffee Social. the coffee Social is a social site for coffee lovers to post or blog about there coffee jerney and or to trubble shoot there coffee recipes.
 
-The site allows an Admin user to login using a pre-registered login(superuser) from there the Admin-user can create, read, update and delete(CRUD) bookings. 
+The site allows an Admin user to login using a pre-registered login(superuser) from there the Admin-user can create, read, update and delete(CRUD) Profiles, post and comments. 
 
-This website also allows a users to create a login, make a booking at the restruant wbesite and view an edit the bookings. 
+This website also allows a users to create a login, make a post on the wbesite and view an edit the there posts and comment/like others. 
 
-To create this website Agile principles where used. The frameworks used were bootstrap and django. 
+To create this website Agile principles where used. The frameworks used were django and Django rest framwork. 
 
  + This is a link to my live website [Live site](https://coffee-social-4aee33ad3a6e.herokuapp.com/)
  + This is a link to my Repo [Repo](https://github.com/Brionconroy/Coffee_social_api)
@@ -32,14 +32,6 @@ To create this website Agile principles where used. The frameworks used were boo
 
  - ## [User Experience](#user-experience-1) 
 
- 
- 
-
- - ## [Features](#features-1) 
-
- 
- 
-
  - ## [Technologies](#technologies-1) 
 
      
@@ -52,12 +44,6 @@ To create this website Agile principles where used. The frameworks used were boo
 
     - ## [Code Validation](#code-validation-1) 
 
-    - ## [Responsiveness Testing](#responsiveness-testing-1) 
-
-     
-
- 
- 
 
 - ## [Deployment](#deployment-1) 
 
@@ -829,22 +815,12 @@ This project has thought me a lot about the differnt technologys used. It has al
 
 ## Credits 
 
-+ Thanks to the tutors at Coding instatute and to my mentor Anthony for guiding me through my project. I would also like to thank Katie Duggan for proofreading the content.
- 
-
-+ This help me set up the time zone correctly  [Timezone](https://www.educative.io/answers/what-is-djangoutilstimezone) 
-
- 
++ Thanks to the tutors at Coding instatute and to my mentor Garath for guiding me through my project. I would also like to thank Katie Duggan for proofreading the content.
  
 
 + This helped me set up my crispyform [Crispy Forms](https://simpleisbetterthancomplex.com/tutorial/2018/08/13/how-to-use-bootstrap-4-forms-with-django.html) 
 
- 
- 
 
-+ This helped me set up my menu format [Codesandbox](https://codesandbox.io/s/restaurant-menu-with-html-css-3bqzx?file=/index.html:527-5114) 
-
- 
  
 
 ### Media 
